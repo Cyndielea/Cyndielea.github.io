@@ -1,2 +1,93 @@
-body { background-color:blue;
+.ct-chart {
+	height: 500px;
+	width: 900px;
 }
+
+
+
+body
+
+{
+	font-family:italic;
+	background-color: #ffcd00;
+	color:black;
+}
+
+
+
+	script
+{
+	color:black;
+	font-size:bold;
+
+}
+
+.ct-label {
+    fill: rgba(10, 3, 3, 0.94);
+    color: rgba(10, 3, 3, 0.94);
+    font-size: .75rem;
+    line-height: 1;
+}
+
+}
+
+.ct-chart, { margin:auto;
+
+}
+
+.ct-series-b .ct-area, .ct-series-b .ct-slice-pie {
+    fill: #efe4e9;
+}
+
+.ct-series-a .ct-area, .ct-series-a .ct-slice-pie {
+    fill: #fe0000;
+}
+
+
+.ct-chart, .ct-chartchart2 { margin:auto;
+	
+	}
+
+
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+    stroke: #3662ad;
+}
+
+
+	.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+    stroke: #fe0000;;
+}
+
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
+    stroke: #efe4e9;
+}
+
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+    stroke: #839e91;
+}
+
+   
+    
+    
+   .ct-grid {
+    stroke: #acf3f3;
+    stroke-width: 1px;
+    stroke-dasharray: 2px;
+} 
+
+.ct-grid {
+    stroke: #4c215d;
+    stroke-width: 1px;
+    stroke-dasharray: 2px;
+}
+
+foreignObject[Attributes Style] {
+    x: 50;
+    y: 470;
+    width: 208.75;
+    height: 20;
+    color:black;
+}
+
+.ct-chart, .ct-chartchart3 { margin:auto;
+	
