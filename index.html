@@ -1,11 +1,136 @@
+<!DOCTYPE html>
 <html>
-  <head> 
+
+	<head>
+       
+
+ <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+
+	<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+	<script src="script.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+<title> Pokemon Go index</title>
+   
+</head> 
+	
+	<body>
+	
+
+  <center><img src="http://www.pokemongo.com/static/assets/images/pokemon_go_logo.png" style="width:608px;height:370px" ></center>
+
+
+
+
+
+
+  <h4 style="font-size:50px;text-align:left"> Who is playing <spann style="color:#3662ad"></span> Pokemon Go</h4>
+<p style="font-size:30px"> <strong>By Gender</strong> </p>
+	<p style="font-size:20px">The magasin <strong>Forbes</strong> report that more women then man are playing <span style="color:#3662ad">Pokemon Go</span>.
+	The game has become the fastest game to top the App Store and Google Play, and in its first week Pokemon Go became the most downloaded app on the App Store of all time.
+
+	<span style="color:#3662ad;">Pokemon Go</span> quickly became a global phenomenon and was one of the most used and profitable mobile apps in 2016, having been downloaded more than 500 million times worldwide.</p>
+
+	<div class= "ct-chart">
+
+			<script>
+
+var data = {
+series: [63,37] 
+
+
+};
+
+var sum = function(a, b) { return a + b };
+
+new Chartist.Pie('.ct-chart', data, {
+  labelInterpolationFnc: function(value) {
+  	var gender;
+  	if (value > 50) {
+  		gender = "women";
+  	} else {
+  		gender = "men";
+  	}
+    return Math.round(value / data.series.reduce(sum) * 100) + '% ' + gender; 
+  }
+});
+
+</script>
+</div>
+
+<p style="font-size:30px"><strong>By Age</strong> <span></p>
+
+<div class= "ct-chart chart2">
+
+<script>
+new Chartist.Bar('.chart2', {
+  labels: ['13-17', '18-29', '30-50', '50+',],
+  series: [22 , 46, 25, 6,]
+}, {
+  distributeSeries: true
+});
+
+</script></div>
+
+
+
+<h4 style="font-size:50px;text-align:left"> Average time spent on <spann style="color:#3662ad"></span> Pokemon Go</h4>
+
+
+<div class= "ct-chart chart3">
+
+<script>
+new Chartist.Bar('.chart3', {
+  labels: ['Pokemon Go', 'Whatsapp', 'Instagram', 'Snapchat', 'Messenger',],
+  series: [43, 30, 25, 23, 13,]
+}, {
+  distributeSeries: true
+});
+
+</script></div>
+
+
+<h4 style="font-size:50px;text-align:left"> The countries with <spann style="color:#3662ad"></span> Pokemon Go</h4>
   
-  <link rel="stylesheet" type="text/css" href="style.css">
-  
+
+ <p style="font-size:20px">Australia, New Zealand, United States, Canada, Japan, United Kingdom, Germany, Italy, Spain, Portugal, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, Greece, Greenland, Hungary, Iceland, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Romania, Slovakia, Slovenia, Sweden, Switzerland, France, Puerto Rico, Hong Kong, Brazil, Mexico, Argentina, Colombia, Peru, Venezuela, Chile, Ecuador, Bolivia, Paraguay, Uruguay, Guyana, Suriname, French Guiana, Falkland Islands, Costa Rica, Honduras, Nicaragua, Belize, Panama, El Salvador, Brunei, Cambodia, Fiji, Federated States of Micronesia, Indonesia, Laos, Malaysia, Papua New Guinea, Palau, Philippines, Singapore, Solomon Islands, Taiwan, Thailand, and Vietnam.</p>
+   
+
+
+
+ 
+  <h4 style="text-align:left;font-size:50px"> The deadliest <span style="color:#3662ad;"> Pokemon Go </span> catches </h4>
+
+<ul style="font-size:20px;text-align:left">
+	
+<li> A 19-year-old man crashed his car into a school in Melbourne, Australia, because he was hunting Pokemon.</li>
+
+<li> One man in Baltimore crashed into a police cruiser while playing the game. </li>
+
+<li>Two men fell off a cliff in San Diego while playing Pokemon Go. Although they both survived, one of them fell 90 feet, which could have been fatal.</li>
+
+<li> Three players in Germany wandered onto an military firing range in search of Pokemon.</li>
+</ul>
+
+<h2 style="text-align:center;font-size:30px">Worldwide Stats</h2>
+
+<p style="text-align:center">
+
+<img class="alignnone wp-image-768" src="https://www.couponbox.com/press/wp-content/uploads/2016/08/Pokemon-Go-Worldwide-Stats.jpg" alt="Learn everything about the viral mobile app" width="800" height="12400" srcset="https://www.couponbox.com/press/wp-content/uploads/2016/08/Pokemon-Go-Worldwide-Stats.jpg 1000w, https://www.couponbox.com/press/wp-content/uploads/2016/08/Pokemon-Go-Worldwide-Stats-768x11904.jpg 768w, https://www.couponbox.com/press/wp-content/uploads/2016/08/Pokemon-Go-Worldwide-Stats-66x1024.jpg 66w" sizes="(max-width: 800px) 100vw, 800px">
+</p>
+
+<p style="text-align:center">
+<img src="https://www.couponbox.com/press/wp-content/uploads/2016/08/Pokemon-Go-Worldwide-Stats.jpg.jpg" title="Pokémon Go Worldwide Stats" /></p><p style="text-align:center"><a href="https://www.couponbox.com/press/pokemon-go-worldwide-stats/">Pokémon Go Worldwide Stats</a></p>
+      
+    </script>
+
+ 
   </head>
-<body>
-<p>Morning frost</p>
+  <body>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </body>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
