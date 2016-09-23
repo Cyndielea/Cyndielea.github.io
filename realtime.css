@@ -1,1 +1,76 @@
 
+.section {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+
+}
+
+body {
+
+    background-image: url("http://www.stefanhayden.com/images/nyancat/nyancat_1600x1200.jpg");
+}
+
+p.groove {
+	border-style: groove;
+}
+
+
+
+
+
+p{ 
+    font-family: verdana;
+    font-size: 40px;
+    text-align: center;
+    color:white;
+
+
+}
+
+h1{
+   
+    font-size:120px;
+	color:#00adf1;
+	height: 180px;
+    width: 450px;
+    background-color: white;
+	border-color: #00adf1;
+	border-style: solid;
+    border-width: 10px;
+    text-align: center;
+    margin: 1px;
+
+
+}
+
+
+
+h2{
+	font-size: 120px;
+	color:white;
+	height: 180px;
+    width: 450px;
+    background-color: #df4b3f;
+	border-color: #df4b3f;
+	border-style: solid;
+    border-width: 10px;
+    text-align: center;
+    margin:1px;
+}
+
+h3{ 
+	font-size: 120px;
+	color:#4875f7;
+	height: 180px;
+    width: 450px;
+    background-color: #fbc300;
+    border-color: #ea4335;
+    border-style: solid;
+    border-width: 10px;
+    outline-style: double; 
+    outline-color: #00c852;
+    outline-width: thick;
+    text-align: center;
+    margin:1px;
+ }
